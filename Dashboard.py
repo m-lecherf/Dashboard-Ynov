@@ -9,7 +9,9 @@ st.set_page_config(
     initial_sidebar_state='auto'
 )
 
-df = pd.read_csv('https://raw.githubusercontent.com/Quera-fr/Python-Programming/refs/heads/main/data.csv')
+@st.cache_data
+def load_data():
+    return pd.read_csv('https://raw.githubusercontent.com/Quera-fr/Python-Programming/refs/heads/main/data.csv')
 
 # Title
 st.title('My Dashboard')
