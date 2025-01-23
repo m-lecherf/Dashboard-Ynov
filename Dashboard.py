@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import seaborn as sns
+import os
 
 # Configuration de la page
 st.set_page_config(
@@ -20,6 +21,13 @@ try :
     st.sidebar.write(st.secrets['API_KEY'])
 except:
     st.sidebar.error('Absence de clé')
+
+
+try:
+    key = os.environ['API_KEY']
+    st.sidebar.write(key)
+except:
+    st.sidebar.error('Absence de clé')  
 
 df = load_data()
 
