@@ -1,6 +1,6 @@
 [theme]
-primaryColor="#FF6BD6"           ; Rose vif pour attirer l'attention
-backgroundColor="#FFFBEA"        ; Jaune pâle pour une ambiance lumineuse et chaleureuse
-secondaryBackgroundColor="#FFEDD5" ; Orange pastel pour adoucir le contraste
-textColor="#FF4B4B"              ; Rouge corail pour un texte vivant
-font="comic sans ms"             ; Une police amusante et décontractée
+primaryColor="#FF6BD6"
+backgroundColor="#FFFBEA"
+secondaryBackgroundColor="#FFEDD5"
+textColor="#FF4B4B"
+font="comic sans ms"
