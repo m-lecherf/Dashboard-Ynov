@@ -20,14 +20,11 @@ def load_data():
 try :
     st.sidebar.write(st.secrets['API_KEY'])
 except:
-    st.sidebar.error('Absence de clé')
-
-
-try:
-    key = os.environ['API_KEY']
-    st.sidebar.write(key)
-except:
-    st.sidebar.error('Absence de clé')  
+    try:
+        key = os.environ['API_KEY']
+        st.sidebar.write(key)
+    except:
+        st.sidebar.error('Absence de clé')  
 
 df = load_data()
 

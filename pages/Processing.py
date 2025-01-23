@@ -5,4 +5,7 @@ uploaded_file = st.file_uploader('Upload a file')
 if uploaded_file is not None:
     # Can be used wherever a "file-like" object is accepted:
     dataframe = pd.read_csv(uploaded_file)
-    st.write(dataframe)
+    edited_df = st.data_editor(dataframe)
+    if st.button('Save'):
+        st.write(edited_df)
+    st.download_button('Download', edited_df.to_csv(), file_name='data.csv', mime='text/csv')
