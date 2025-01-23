@@ -24,7 +24,7 @@ except:
 df = load_data()
 
 # Title
-st.title('My Dashboard - Kevin Duranty')
+st.title('My Dashboard - Mathis Lecherf')
 
 # Subtitle
 st.subheader('Présentation de données')
